@@ -15,10 +15,10 @@
 输出样例：
 12:42:59
 */
+//使用math.round 方法四舍五入，接收参数是double
+//使用printf 和 %02d补齐输出
 
-import java.math.BigDecimal;
 import java.util.Scanner;
-import java.time.Instant;
 
 public class Twenty_sixth {
     public static void main(String[] args){
@@ -27,11 +27,11 @@ public class Twenty_sixth {
         long first = input.nextLong();
         long second = input.nextLong();
         long time = second-first;
-        BigDecimal time2 = new BigDecimal(time/CLK_TCK).setScale(0,BigDecimal.ROUND_HALF_UP);
-        BigDecimal hours = new BigDecimal(String.valueOf(time2/3600)).setScale(0,BigDecimal.ROUND_HALF_UP);
-        time2 = time%3600;
-        long minutes = Math.round(time2/60);
-        long seconds = time2%60;
-        System.out.println(hours+":"+minutes+":"+seconds);
+        long time2 = Math.round((double) time/CLK_TCK);
+        int hours =(int)(time2/3600);
+        time2 = time2%3600;
+        int minutes =(int)(time2/60);
+        int seconds = (int)(time2%60);
+        System.out.printf("%02d:%02d:%02d",hours,minutes,seconds);
     }
 }
