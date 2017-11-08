@@ -23,7 +23,7 @@
 
 import java.util.Scanner;
 
-public class Sixteenth {
+public class Test16 {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         long a = input.nextLong();

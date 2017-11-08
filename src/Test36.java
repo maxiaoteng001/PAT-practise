@@ -20,7 +20,7 @@ aaaaaaaaaa
 
 import java.util.Scanner;
 
-public class Thirty_sixth {
+public class Test36 {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();

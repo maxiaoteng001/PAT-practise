@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Eighth {
+public class Test8 {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();

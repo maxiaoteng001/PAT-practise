@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class Ninth {
+public class Test9 {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         String[] array ;

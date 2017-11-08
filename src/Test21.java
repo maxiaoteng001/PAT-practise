@@ -21,7 +21,7 @@
 //使用toArray（）造成了超时，故采用string.charAt()
 import java.util.Scanner;
 
-public class Twenty_First {
+public class Test21 {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         String x = input.next();

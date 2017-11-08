@@ -17,7 +17,7 @@
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class Seventh {
+public class Test7 {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();

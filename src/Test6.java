@@ -13,7 +13,7 @@ BBSSS1234
 SS123
 */
 import java.util.Scanner;
-public class Sixth {
+public class Test6 {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         int num = input.nextInt();

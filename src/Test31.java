@@ -35,7 +35,7 @@ All passed
 
 import java.util.Scanner;
 
-public class Thirty_first {
+public class Test31 {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();

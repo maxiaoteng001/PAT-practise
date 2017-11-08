@@ -17,7 +17,7 @@
 import java.lang.reflect.Array;
 import java.util.*;
 
-public class Fifth {
+public class Test15 {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();

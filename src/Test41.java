@@ -25,7 +25,7 @@
 
 import java.util.*;
 
-public class Forty_first {
+public class Test41 {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         Map<Integer,Examinee> examinees = new HashMap<>();

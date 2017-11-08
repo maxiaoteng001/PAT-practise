@@ -23,7 +23,7 @@
 //力求简洁，刚开始用了数组来保存，然后计算，结果第三例变运行超时
 import java.util.Scanner;
 
-public class Eleventh {
+public class Test11 {
     public static void main(String[] args){
 
         Scanner input = new Scanner(System.in);

@@ -23,7 +23,7 @@
 
 import java.util.Scanner;
 
-public class Sixty_first {
+public class Test61 {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         int studentNum = input.nextInt();

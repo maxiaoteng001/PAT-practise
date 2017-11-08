@@ -20,7 +20,7 @@
 
 import java.util.Scanner;
 
-public class Twenty_sixth {
+public class Test26{
     public static void main(String[] args){
         final int CLK_TCK = 100;
         Scanner input = new Scanner(System.in);
