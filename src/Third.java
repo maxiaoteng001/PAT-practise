@@ -34,21 +34,50 @@ public class Third {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         int count = input.nextInt();
+        input.nextLine();
         String[] test = new String[count];
         for(int i=0;i<count;i++){
             test[i] = input.nextLine();
         }
-        for(String e:test){
-            for(char m:e.toCharArray()){
+        String temp;
+        for(int i=0;i<count;i++){
+            int countP=0,countT=0;
+            int indexP=0,indexT=0;
+            temp = test[i];
+            boolean result = true;
+            for(int j=0;j<temp.length();j++){
+                char m=temp.charAt(j);
                 if(m!='P' && m!='A' && m!='T'){
-                    System.out.println("No");
+                    result = false;
+                    break;
+                }
+                else if(m =='P'){
+                    countP++;
+                    indexP =j;
+                }
+                else if(m =='T'){
+                    countT++;
+                    indexT = j;
+                }
+                if(countP>1 || countT>1){
+                    result = false;
                     break;
                 }
             }
-            for(char m:e.toCharArray()){
-
+            if(result) {
+                if(temp.indexOf('P')== -1 || temp.indexOf('A')== -1 || temp.indexOf('T')==-1){
+                    result = false;
+                }
+                else if ((temp.length() - indexT - 1) == (indexP * (indexT - 1 - indexP))) {
+                    result = true;
+                } else {
+                    result = false;
+                }
             }
+            if(result)
+                System.out.println("YES");
+            else
+                System.out.println("NO");
         }
     }
-
 }
