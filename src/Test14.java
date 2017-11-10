@@ -15,27 +15,25 @@ public class Test14 {
         int minute = 0;
         int count = 0;
         for (int i = 0; i < s1.length(); i++) {
-            if (s1.charAt(i)>'A' && s1.charAt(i)<'G' && s2.charAt(i) == s1.charAt(i) ) {
-                if (count == 0) {
-                    week = s1.charAt(i);
-                    count++;
-                } else if (count == 1 &&
-                        (s1.charAt(i)>'A' && s1.charAt(i)<'N' || s1.charAt(i)>'0' && s1.charAt(i)<'9')&&
-                        s2.charAt(i) == s1.charAt(i) ) {
+            if (count == 0 && s2.charAt(i) == s1.charAt(i) && s1.charAt(i)>='A' && s1.charAt(i)<='G' ) {
+                week = s1.charAt(i);
+                count++;
+            } else if (count == 1 &&
+                    s2.charAt(i) == s1.charAt(i) &&
+                    (s1.charAt(i)>='A' && s1.charAt(i)<='N' || s1.charAt(i)>='0' && s1.charAt(i)<='9')) {
                     hourc = s2.charAt(i);
                     break;
                 }
             }
-        }
         for (int i = 0; i < s3.length(); i++) {
             if (s3.charAt(i) == s4.charAt(i) &&
-                    ((s3.charAt(i)>'A' && s3.charAt(i)<'Z') || (s3.charAt(i)>'a' &&s3.charAt(i)<'z'))){
+                    ((s3.charAt(i)>='A' && s3.charAt(i)<='Z') || (s3.charAt(i)>='a' &&s3.charAt(i)<='z'))){
                 minute = i;
                 break;
             }
         }
         String[] weeks = {"MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"};
-        if(hourc>'A' && hourc<'N')
+        if(hourc>='A' && hourc<='N')
             hour = hourc +10 -'A';
         else
             hour = hourc -'0';
