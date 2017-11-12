@@ -82,12 +82,35 @@ Test18
 
 3 使用x？y:z代替长串的if语句
 
+Test19
+
+1 使用if语句时，多考虑条件是否全面，此次测试忽视了6174本身的测试
+
+Test20
+
+1 因为本次全是数字，所以使用了Scanner来获取输入
+
+2 在官网测试全部超时，牛客网通过
+
+3 新建了Mooncake类并使用Collections.sort(arrayList);对链表进行排序
+
 Test21
 
 1 题目说了1000位，故要采用字符串
 
 2 使用toArray（）造成了超时，故采用string.charAt()，String本身就是数组化，重复操作了
 
+Test22
+
+1 最开始采用int作为结果，只是将每次的余数乘以10的幂，发现2进制超出了int大小，便采用arraylist来倒序输出
+
+Test24(主要考察字符串的处理)
+
+1 使用replace(string1,string2)去除了其中的小数点
+
+2 使用subString(indexBegin,indexEnd)对字符串精准拆分
+
+3 逻辑不明导致不能一次通过
 
 Test26
 
